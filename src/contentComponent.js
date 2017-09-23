@@ -12,7 +12,7 @@ class ContentComponent extends React.Component {
       noHours: 0,
       emailsPerHour: 0,
       emailsPerMinute: 0,
-      name: "",
+      name: "User",
       rank: ""
     };
     this.handleEmailChange = this.handleEmailChange.bind(this);
