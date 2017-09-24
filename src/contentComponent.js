@@ -12,8 +12,9 @@ class ContentComponent extends React.Component {
       noHours: 0,
       emailsPerHour: 0,
       emailsPerMinute: 0,
-      name: "",
-      rank: ""
+      name: "User",
+      rank: "",
+      achievementAlt: "",
     };
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -66,18 +67,21 @@ class ContentComponent extends React.Component {
     }
     if (e.target.value >= 10 && e.target.value <= 15) {
       this.setState({ rank: "Read Receipt Rogue" });
+      this.setState({ achievementAlt: "Rank 10!" })      
     }
     if (e.target.value >= 16 && e.target.value <= 20) {
       this.setState({ rank: "Writing Warrior" });
     }
     if (e.target.value >= 21 && e.target.value <= 30) {
       this.setState({ rank: "Middle Managment Mage" });
+      this.setState({ achievementAlt: "Rank 20!" })    
     }
     if (e.target.value >= 31 && e.target.value <= 40) {
       this.setState({ rank: "Administrative Adept" });
     }
     if (e.target.value >= 41 && e.target.value <= 50) {
       this.setState({ rank: "Departmental Demi-God" });
+      this.setState({ achievementAlt: "Rank 40!" })    
     }
     if (e.target.value >= 51) {
       this.setState({ rank: "Gmail God" });
@@ -91,7 +95,8 @@ class ContentComponent extends React.Component {
       noHours,
       emailsPerHour,
       rank,
-      emailsPerHourHidden
+      emailsPerHourHidden,
+      achievementAlt
     } = this.state;
     return (
       <div>
@@ -109,6 +114,7 @@ class ContentComponent extends React.Component {
           emailsPerHour={emailsPerHour}
           emailsPerHourHidden={emailsPerHourHidden}
           rank={rank}
+          achievementAlt={achievementAlt}
         />
       </div>
     );
