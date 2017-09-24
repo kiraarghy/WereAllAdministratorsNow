@@ -29,13 +29,34 @@ class DisplayComponent extends React.Component {
   };
   achievementContainer = () => {
     if (this.props.noEmails >= 10 && this.props.noEmails <= 20) {
-      return <img src={Achievement10} width={50} height={50} alt={this.props.achievementAlt} />;
+      return (
+        <img
+          src={Achievement10}
+          width={50}
+          height={50}
+          alt={this.props.achievementAlt}
+        />
+      );
     }
     if (this.props.noEmails >= 21 && this.props.noEmails <= 30) {
-      return <img src={Achievement20} width={50} height={50} alt={this.props.achievementAlt} />;
+      return (
+        <img
+          src={Achievement20}
+          width={50}
+          height={50}
+          alt={this.props.achievementAlt}
+        />
+      );
     }
     if (this.props.noEmails >= 31) {
-      return <img src={Achievement40} width={50} height={50} alt={this.props.achievementAlt} />;
+      return (
+        <img
+          src={Achievement40}
+          width={50}
+          height={50}
+          alt={this.props.achievementAlt}
+        />
+      );
     }
   };
 
@@ -43,18 +64,21 @@ class DisplayComponent extends React.Component {
     return (
       <div style={styles.boxContainer_Container}>
         <div style={styles.boxContainer}>
-          <div style={styles.box}>
-            {this.props.name} sent: {this.props.noEmails} emails today.
+          <div style={styles.firstLineContainer}>
+            <span style={styles.box}>
+              {this.props.name} sent: {this.props.noEmails} emails today.
+            </span>
+            <span style={styles.achievementBox}>
+              {this.achievementContainer()}
+            </span>
           </div>
           <div style={styles.containerStyle}>
             {this.emailsPerHourContainter()}
             {this.rankContainer()}
           </div>
-          <div>{this.achievementContainer()}</div>
         </div>
       </div>
     );
   }
 }
-
 export default DisplayComponent;
