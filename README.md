@@ -13,4 +13,10 @@ I sometimes talk to my friends about how many emails I can clear in a day, how m
 
 ![alt text](https://github.com/shtekhler/WereAllAdministratorsNow/blob/master/Screen%20Shot%202017-09-24%20at%2001.41.09.png "Example from app")
 
-Built using react.
+## Things learnt from this: 
+
+1. A whole bunch of CSS/ React styling nuances.
+2. <img src=/> in react doesn't respond well to dynamic variables.
+3. Finding free to use achievement icons is hard.
+
+## Built using react.
