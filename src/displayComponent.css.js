@@ -11,23 +11,35 @@ export default {
     textAlign: "left",
     height: "auto",
     width: "60%",
-    backgroundImage: 'url("https://images.pexels.com/photos/267582/pexels-photo-267582.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")',    
+    backgroundImage:
+      'url("https://images.pexels.com/photos/267582/pexels-photo-267582.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")'
   },
   box: {
-    color: "hsl(29, 49%, 84%)",
-    margin: "10px 15px 10px 15px",
-    background:
-    "linear-gradient(to right, rgba(39,32,25,1) 0%,rgba(48,38,30,0.5) 10%,rgba(46,36,28,0.49) 20%,rgba(62,48,38,0.38) 30%,rgba(62,48,38,0.18) 40%)"
+    color: "black",
+    background: "linear-gradient(to right, grey, transparent)"
   },
   box2: {
-    color: "hsl(29, 49%, 84%)",
+    color: "black",
     margin: "0px 15px 0px 15px",
-    background: "linear-gradient(to right, rgba(39,32,25,1) 0%,rgba(48,38,30,0.5) 10%,rgba(46,36,28,0.49) 20%,rgba(62,48,38,0.38) 30%,rgba(62,48,38,0.18) 40%)",
+    width: "50%",
+    background: "linear-gradient(to right, grey, transparent)"
   },
-  containerStyle : {
-    marginBottom: "10px",
+  imageBox: {},
+  containerStyle: {
+    marginBottom: "10px"
+  },
+
+  achievementBox: {
+    float: "right",
+    border: "2px solid white",
+    borderRadius: "5px",
   },
   horizontalLine: {
-    color: "grey"
+    color: "grey",
+    width: "50%",
+    margin: "0px 15px 10px 15px"
   },
+  firstLineContainer: {
+    margin: "10px 15px 10px 15px",
+  }
 };
