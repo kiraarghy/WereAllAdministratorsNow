@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./inputComponent.css.js";
+
 class InputComponent extends React.Component {
 
   render() {
@@ -12,7 +14,7 @@ class InputComponent extends React.Component {
       handleNameChange
     } = this.props;
     return (
-      <div>
+      <div style={styles.container}>
         <label>
           Name:
           <input

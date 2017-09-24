@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./displayComponent.css.js";
 
 import Achievement10 from "./200px-Class_K_fire_icon.png";

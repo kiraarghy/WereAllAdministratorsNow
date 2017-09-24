@@ -8,6 +8,7 @@ export default {
     border: "2px solid black",
     borderRadius: "5px",
     margin: "20px",
+      left: '20%',
     textAlign: "left",
     height: "auto",
     width: "60%",
